@@ -256,15 +256,11 @@ span {
       color: #fff;
       display: flex;
       flex-direction: column;
-      border: 3px solid #fff;
       padding: 10px;
 
-      span {
-        background-color: transparent;
-      }
-
-      span:nth-child(2) {
-        margin-inline-end: -28px;
+      svg{
+        width: clamp( 150px, 15.625vw, 300px);
+        height: clamp( 150px, 15.625vw, 300px);
       }
     }
 

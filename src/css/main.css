@@ -65,23 +65,23 @@ span {
       width: 100%;
       padding: clamp(0px, 1.0416666666666665vw, 20px) 10px;
 
-      button.navbar-toggler{
+      button.navbar-toggler {
         border: 1px solid #fff;
         outline: none !important;
 
-        span{
-            background-image: none;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            justify-content: space-around;
-            span{
-                width: 100%;
-                height: 2px;
-                background-color: #fff;
-                display: block;
-                border-radius: 5px;
-            }
+        span {
+          background-image: none;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: space-around;
+          span {
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+            display: block;
+            border-radius: 5px;
+          }
         }
       }
 
@@ -129,24 +129,24 @@ span {
 
       @media (max-width: 991px) {
         .overlay-navbar {
-          position: absolute; 
-          top: 100%; 
+          position: absolute;
+          top: 100%;
           left: 0;
-          width: 100%; 
-          z-index: 1050; 
+          width: 100%;
+          z-index: 1050;
           background-color: #233345;
 
-          ul{
+          ul {
             .v-line {
-                width: 20%;
-                height: 1px;
-                background-color: #ffffff9c;
-              }
+              width: 20%;
+              height: 1px;
+              background-color: #ffffff9c;
+            }
           }
         }
 
         .navbar-collapse.collapse.show {
-          display: block !important; 
+          display: block !important;
         }
       }
     }
@@ -258,9 +258,9 @@ span {
       flex-direction: column;
       padding: 10px;
 
-      svg{
-        width: clamp( 150px, 15.625vw, 300px);
-        height: clamp( 150px, 15.625vw, 300px);
+      svg {
+        width: clamp(150px, 15.625vw, 300px);
+        height: clamp(150px, 15.625vw, 300px);
       }
     }
 
@@ -470,8 +470,30 @@ footer {
     color: #fff;
 
     .icons-container {
+
       .icons {
         margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 20px;
+        flex-direction: row;
+
+        a {
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          svg {
+            width: 24px;
+            height: 24px;
+            
+            path {
+              fill: #fff;
+            }
+          }
+        }
       }
     }
 
@@ -495,6 +517,7 @@ footer {
       .icons-container {
         .icons {
           margin-top: 0;
+          justify-content: center;
         }
       }
 
